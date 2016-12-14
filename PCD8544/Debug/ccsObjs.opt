@@ -1,0 +1,1 @@
+"./main.obj" "./pcd8544.obj" "./uscia0_spi.obj" "../lnk_msp430g2553.cmd" -llibc.a 
