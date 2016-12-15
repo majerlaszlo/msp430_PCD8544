@@ -14,8 +14,8 @@
 #define WIDTH       84
 #define HEIGHT      48
 
-#define PCD_RESET   P3out.bit->b1           // P3.1
-#define PCD_CE      P3out.bit->b0           // P3.0
+#define PCD_RESET   P2out.bit->b2           // P2.2
+#define PCD_CE      P2out.bit->b1           // P1.1
 #define PCD_DC      P2out.bit->b0           // P2.0
 
 // Don't Forget to set specified port to output at main.c (init_ports)!!!

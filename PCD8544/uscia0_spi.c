@@ -53,6 +53,6 @@ void __attribute__ ((interrupt(USCIAB0RX_VECTOR))) USCIA0RX_ISR (void)
 #error Compiler not supported!
 #endif
 {
-    IFG2 &=  UCA0RXIFG;                       // Clear Interrupt flag
+    IFG2 &=  ~UCA0RXIFG;                       // Clear Interrupt flag
     __bic_SR_register_on_exit(CPUOFF);        // Clear CPUOFF bit from 0(SR). Interrupt wakes up MCU
 }

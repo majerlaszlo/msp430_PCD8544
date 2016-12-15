@@ -12,7 +12,8 @@ int main(void) {
     init_ports();
     init_spi();
     init_lcd();
-    lcd_string("teszt");
+
+    lcd_string("Hello World!");
 
     while(1)
     {
@@ -33,6 +34,5 @@ void init_ports(void)
     P3in.bits = &P3IN;
     P3out.bits = &P3OUT;
 
-    P3DIR   |=  BIT0 + BIT1;        // P3.0 and 3.1 Outputs
-    P2DIR   |=  BIT0;               // P2.0 Output
+    P2DIR   |=  BIT0 + BIT1 + BIT2;               // P2.0 2.1 2.2 Output
 }

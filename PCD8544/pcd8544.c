@@ -51,7 +51,7 @@ void init_lcd(void)
     PCD_RESET = 1;
 
     send_lcd(CMD,FUNC + H);             // Extended instruction set, horizontal addressing
-    send_lcd(CMD,VOP + 79);             // Set Contrast: 79
+    send_lcd(CMD,VOP + 27);             // Set Contrast: 27
     send_lcd(CMD,TC + 0);               // Set Temperature Coefficient: 0
     send_lcd(CMD,BS + 7);               // Set Bias System: 7
     send_lcd(CMD,FUNC);                 // Set Basic Instruction set, horizontal addressing
