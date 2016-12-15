@@ -91,6 +91,6 @@ void lcd_string(const char *string)
 {
     while(*string)
     {
-        send_lcd(DAT, *string++);
+        lcd_set_char(*string++);
     }
 }

@@ -12,13 +12,14 @@ int main(void) {
     init_ports();
     init_spi();
     init_lcd();
-	
+    lcd_string("teszt");
+
     while(1)
     {
 
     }
 
-	return 0;
+//	return 0;
 }
 
 void init_ports(void)
